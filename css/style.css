@@ -5,7 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -348,6 +348,9 @@ form textarea{
     .projects-image img{
         filter: saturate(1) brightness(1);
     }
+    .over-play.active {
+        top: 0%;
+    }
 }
 
 
@@ -358,12 +361,17 @@ form textarea{
     section{
         padding: 50px 4%;
     }
+    .over-play.active {
+        top: 3.1%;
+    }
+
 }
 @media (max-width: 881px){
     :root{
         --big-font: 2.7rem;
         --medium-font: 1.4rem;
     }
+
 
 }
 @media (max-width: 768px) {
@@ -441,6 +449,10 @@ form textarea{
         width: 90%;
         display: flex;
         justify-self: center;
+    }
+
+    .over-play.active {
+        top: 1.2%;
     }
 
     .projects-box img{
